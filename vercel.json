@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "tsc",
-  "devCommand": "tsx watch ./src/server.ts",
-  "outputDirectory": "./dist",
-  "rewrites": [{ "source": "/(.*)", "destination": "/dist/server.js" }]
+  "buildCommand": "pnpm run build",
+  "devCommand": "pnpm run dev",
+  "outputDirectory": "/dist"
 }
