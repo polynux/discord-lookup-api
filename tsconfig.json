@@ -13,6 +13,7 @@
     "typeRoots": ["./node_modules/@types", "./types", "./src/types"],
     "rootDir": "./src",
     "outDir": "./dist",
+    "types": ["node", "express"],
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
