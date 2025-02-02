@@ -25,7 +25,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
     next();
 });
 
-app.use((req: Request, res: Response, next) => {
+app.use((req: Request, res: Response, next: NextFunction) => {
     req.disableCache = disableCache;
     req.redisClient = redisClient;
     next();

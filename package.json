@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js --disable-cache",
-    "dev": "ts-node-dev src/server.ts --disable-cache"
+    "dev": "tsx watch src/server.ts"
   },
   "author": "",
   "license": "ISC",
@@ -18,14 +18,15 @@
     "minimist": "^1.2.8",
     "node-fetch": "^2.6.7",
     "redis": "^4.5.1",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.6.3"
+    "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
+    "@types/express": "^4.0.0",
     "@types/minimist": "^1.2.5",
     "@types/node": "^22.10.1",
-    "@types/node-fetch": "^2.6.11"
+    "@types/node-fetch": "^2.6.11",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
   }
 }

@@ -1,3 +1,4 @@
+/// /// <reference path="@types/express" />
 import RedisWrapper from "../../redisClient";
 
 export {};
