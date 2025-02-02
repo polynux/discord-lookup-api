@@ -1,19 +1,7 @@
 {
   "version": 2,
   "buildCommand": "tsc",
-  "builds": [
-    {
-      "src": "src/server.ts",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["dist/**"]
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/dist/server.js"
-    }
-  ]
+  "devCommand": "tsx watch ./src/server.ts",
+  "outputDirectory": "./dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/dist/server.js" }]
 }
