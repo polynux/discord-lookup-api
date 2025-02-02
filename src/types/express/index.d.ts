@@ -1,8 +1,10 @@
-import { RedisWrapper } from "../../redisClient";
+import RedisWrapper from "../../redisClient";
+
+export {};
 
 declare global {
   namespace Express {
-    interface Request {
+    export interface Request {
       redisClient: RedisWrapper | null;
       disableCache: boolean;
     }
